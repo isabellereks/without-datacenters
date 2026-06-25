@@ -458,17 +458,9 @@ function App() {
 
   return (
     <main className="reader">
-      <header className="topbar">
-        <div className="brand">
-          <span />
-          Without Data Centers
-        </div>
-        <div className="page-count">
-          {index + 1} / {slides.length}
-        </div>
-      </header>
-
       <section className="slide" key={slide.scene}>
+        <div className="page-flourish page-flourish-left" aria-hidden="true" />
+        <div className="page-flourish page-flourish-right" aria-hidden="true" />
         <div className="scene-shell">
           <SceneIllustration type={slide.scene} />
         </div>
@@ -481,18 +473,18 @@ function App() {
           <h1>{slide.title}</h1>
           <p>{slide.copy}</p>
           <div className="note">{slide.note}</div>
-          <div className="source-links" aria-label="Sources">
-            <span>Sources</span>
+          <details className="source-links">
+            <summary>Receipts</summary>
             {slide.sources.map((source) => (
               <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
                 {source.label}
               </a>
             ))}
-          </div>
+          </details>
         </article>
 
         <aside className="breaks-panel" aria-label="What changes">
-          <span>What changes</span>
+          <span>Little threads</span>
           <div>
             {slide.chips.map((chip) => (
               <button key={chip} type="button">
@@ -505,8 +497,11 @@ function App() {
 
       <footer className="controls">
         <button type="button" onClick={() => go(index - 1)} disabled={isFirst}>
-          Back
+          Previous page
         </button>
+        <div className="turn-count" aria-label={`Page ${index + 1} of ${slides.length}`}>
+          Page {index + 1} of {slides.length}
+        </div>
         <div className="dots">
           {slides.map((item, dotIndex) => (
             <button
@@ -519,7 +514,7 @@ function App() {
           ))}
         </div>
         <button type="button" onClick={() => go(index + 1)} disabled={isLast}>
-          Next
+          Turn page
         </button>
       </footer>
     </main>
