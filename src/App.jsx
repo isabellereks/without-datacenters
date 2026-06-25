@@ -4,10 +4,10 @@ const slides = [
   {
     time: "6:45 AM",
     chapter: "Morning",
-    title: "The alarm rings, then nothing else catches up.",
+    title: "Your alarm does not ring.",
     copy:
-      "The room is bright. The coffee maker clicks on. But your phone still says yesterday's weather, your calendar will not refresh, and the message from your sister sits there, unsent.",
-    note: "The house has power. What is missing is the part of morning that normally arrives from somewhere else.",
+      "Your phone did not sync overnight, so the alarm never updated. The clock on the wall says one thing, your calendar says another, and yesterday's weather is still sitting on the screen.",
+    note: "The room still has electricity. What is missing is the small remote check-in your phone usually does before you wake up.",
     scene: "morning",
     chips: ["weather app", "calendar sync", "messages", "smart routines"],
     sources: [
@@ -20,10 +20,10 @@ const slides = [
   {
     time: "7:20 AM",
     chapter: "The Feed",
-    title: "For a minute, the internet feels less haunted.",
+    title: "The feed is quieter.",
     copy:
-      "No auto-written ads chase you across breakfast. No bot account is arguing in the comments. No fake voice message from a stranger pretending to be family. The worst parts of AI go quiet too.",
-    note: "This is the part critics are right to worry about: scams, synthetic spam, job anxiety, and systems built faster than people can consent to them.",
+      "There are fewer auto-written ads, fewer bot replies, fewer fake images, and fewer strange accounts trying to sound human. Some of the internet's worst habits stop with the useful parts.",
+    note: "This is the part critics are right to notice: scams, synthetic spam, job anxiety, and systems people never meaningfully agreed to.",
     scene: "feed",
     chips: ["AI spam", "deepfakes", "ad targeting", "bot accounts"],
     sources: [
@@ -40,10 +40,10 @@ const slides = [
   {
     time: "8:05 AM",
     chapter: "Commute",
-    title: "The city is moving, but the map has gone still.",
+    title: "The map will not update.",
     copy:
-      "At the bus stop, everyone does the same small gesture: unlock, refresh, wait. The road is full of cars, but the screen cannot tell you which ones matter, or when anything is coming.",
-    note: "The streets are still there. The live picture of them is not.",
+      "The bus stop is still there. The buses are still running. But your phone cannot tell which one is late, which road is backed up, or whether the train platform changed.",
+    note: "The streets are local. The live picture of them is usually not.",
     scene: "commute",
     chips: ["live traffic", "train times", "rideshare", "charging"],
     sources: [
@@ -56,10 +56,10 @@ const slides = [
   {
     time: "9:30 AM",
     chapter: "Work",
-    title: "You get to work and meet a locked door made of glass.",
+    title: "Work opens to old copies.",
     copy:
-      "The laptop opens beautifully. That almost makes it worse. Email spins, the shared doc is a white page, and the meeting link has become a little blue sentence that leads nowhere.",
-    note: "The computer works. The shared place where the work lived is gone quiet.",
+      "Your laptop turns on. The files saved on it still open. But email will not load, the shared doc is stuck, and the meeting link is just a link.",
+    note: "The computer works. The shared version of the work is somewhere it cannot reach.",
     scene: "work",
     chips: ["email", "shared docs", "sign-in", "video calls"],
     sources: [
@@ -72,10 +72,10 @@ const slides = [
   {
     time: "10:45 AM",
     chapter: "School",
-    title: "The classroom becomes local again.",
+    title: "Class starts without the portal.",
     copy:
-      "The teacher can still teach. The student can still think. But the assignment link is dead, the online textbook will not open, captions are gone from the lecture video, and the parent portal cannot prove anyone was here.",
-    note: "A lot of education technology is convenience until it becomes the only copy of the plan.",
+      "The teacher can still teach, but the assignment link does not open. The online textbook is unavailable, captions are missing from the video, and the parent portal cannot update attendance.",
+    note: "A lot of school software feels optional until it becomes the only copy of the plan.",
     scene: "school",
     chips: ["LMS", "e-textbooks", "captions", "parent portals"],
     sources: [
@@ -88,10 +88,10 @@ const slides = [
   {
     time: "12:40 PM",
     chapter: "Lunch",
-    title: "At lunch, the line becomes very polite and very long.",
+    title: "Lunch needs cash.",
     copy:
-      "The cashier tries your card twice, then smiles the apology-smile. Someone behind you offers cash. The tablet on the counter keeps asking a question nobody in the room can answer.",
-    note: "A payment is not just a tap. It is a tiny conversation with distant machines.",
+      "The cashier tries your card, then tries it again. The reader is on, but the approval never comes back. Someone behind you has a twenty and suddenly looks prepared.",
+    note: "A tap is not just a tap. It asks a few distant systems whether the payment is allowed.",
     scene: "lunch",
     chips: ["card payments", "orders", "inventory", "receipts"],
     sources: [
@@ -108,10 +108,10 @@ const slides = [
   {
     time: "2:05 PM",
     chapter: "Errands",
-    title: "The shelves are full. The store has lost its memory.",
+    title: "Errands become phone calls.",
     copy:
-      "A package says it is out for delivery, then nowhere at all. The pharmacy app cannot see the refill. The grocery scanner knows the barcode, but not whether the back room has any more.",
-    note: "Modern logistics is not only trucks and shelves. It is shared databases staying current in near real time.",
+      "The package tracker stops at yesterday. The pharmacy app cannot find your refill. The grocery scanner can read a barcode, but it cannot say whether more are in the back.",
+    note: "Modern logistics is trucks and shelves, plus shared databases that stay current.",
     scene: "errands",
     chips: ["package tracking", "refills", "stock counts", "returns"],
     sources: [
@@ -124,10 +124,10 @@ const slides = [
   {
     time: "3:15 PM",
     chapter: "Care",
-    title: "The clinic remembers you, just not enough.",
+    title: "The clinic prints what it can.",
     copy:
-      "The nurse is kind. The room is clean. But your chart will not load, the prescription history is incomplete, and everyone starts writing things down on paper like they are rebuilding memory by hand.",
-    note: "The people are still here. The records that follow you are not.",
+      "The nurse is still kind. The room is still clean. But your chart will not load, your prescription history is incomplete, and someone starts writing down the basics by hand.",
+    note: "The people are still there. The records that usually follow you are not.",
     scene: "care",
     chips: ["records", "scans", "pharmacy", "insurance"],
     sources: [
@@ -144,10 +144,10 @@ const slides = [
   {
     time: "5:10 PM",
     chapter: "The Town",
-    title: "The building people protested is quiet now.",
+    title: "The server building is quiet too.",
     copy:
-      "No cooling fans. No new substation fight. No worry that a server farm will drink from the same watershed or push the grid harder during a heat wave. That relief is real.",
-    note: "But the silence is not selective. The same infrastructure carried the useful parts too.",
+      "No cooling fans. No new substation meeting. Less worry about water use, noise, or extra demand on the grid during a heat wave. That relief is real.",
+    note: "The problem is that the quiet is not selective. The same infrastructure carried the useful parts too.",
     scene: "town",
     chips: ["electric load", "water use", "noise", "local permits"],
     sources: [
@@ -168,10 +168,10 @@ const slides = [
   {
     time: "6:30 PM",
     chapter: "Work, Again",
-    title: "Some people feel safer. Some people lose their tools.",
+    title: "Some people keep their jobs. Some lose tools.",
     copy:
-      "The illustrator is relieved the image generator is gone. The call-center worker is relieved the replacement demo failed. Then the translator loses captions, the analyst loses search, and the disabled student loses the tool that made text easier to read.",
-    note: "AI is not one thing. It is threat, convenience, dependency, and accessibility all tangled together.",
+      "The illustrator is relieved the image generator is gone. The call-center worker is relieved the replacement demo cannot run. Then the translator loses captions, the analyst loses search, and a student loses a reading aid.",
+    note: "AI is not one thing. It can be threat, convenience, dependency, and accessibility at the same time.",
     scene: "tradeoff",
     chips: ["job anxiety", "creative work", "accessibility", "automation"],
     sources: [
@@ -188,10 +188,10 @@ const slides = [
   {
     time: "8:20 PM",
     chapter: "Evening",
-    title: "By evening, the quiet has a shape.",
+    title: "Evening gets smaller.",
     copy:
-      "No show loads. No game starts. The family chat is a row of failed sends. You pick up a book, not because the internet is gone forever, but because tonight it feels farther away than it ever has.",
-    note: "It is not just entertainment. It is company, memory, coordination, and habit.",
+      "The show will not load. The game will not start. The family chat has a row of failed sends. You pick up a book because tonight that is simply what works.",
+    note: "Some of this is entertainment. Some of it is company, memory, coordination, and habit.",
     scene: "evening",
     chips: ["streaming", "group chat", "photos", "games"],
     sources: [
@@ -204,9 +204,9 @@ const slides = [
   {
     time: "9:10 PM",
     chapter: "The Ledger",
-    title: "The day did get smaller. It also got less extractive.",
+    title: "The quiet has an upside.",
     copy:
-      "No model is guessing your mood. No feed is ranking your attention. No company is turning one more private habit into training data. Some of the quiet feels like privacy returning.",
+      "No model is guessing your mood. No feed is ranking your attention. No company is turning one more private habit into training data. Some of the quiet feels like privacy.",
     note: "The honest question is not whether data centers matter. It is who benefits, who pays, and what should never have been built on them.",
     scene: "ledger",
     chips: ["privacy", "tracking", "training data", "attention"],
@@ -220,10 +220,10 @@ const slides = [
   {
     time: "10:00 PM",
     chapter: "Reveal",
-    title: "The cloud was never floating.",
+    title: "The cloud has an address.",
     copy:
-      "All day, the missing thing had a physical address: rooms of servers, fiber, cooling, backup power, security, software, and people keeping it alive. It disappeared into ordinary life because it usually works.",
-    note: "A data center is not the internet. It is one of the places where modern life waits for an answer.",
+      "All day, the missing thing was physical: servers, fiber, cooling, backup power, software, security, and people keeping it running. It feels invisible because it usually works.",
+    note: "A data center is not the whole internet. It is one of the places modern life waits for an answer.",
     scene: "reveal",
     chips: ["servers", "fiber", "cooling", "backup power"],
     sources: [
@@ -459,33 +459,8 @@ function App() {
   return (
     <main className="reader">
       <section className="slide" key={slide.scene}>
-        <div className="page-flourish page-flourish-left" aria-hidden="true" />
-        <div className="page-flourish page-flourish-right" aria-hidden="true" />
-        <div className="scene-shell">
-          <SceneIllustration type={slide.scene} />
-        </div>
-
         <article className="caption-card">
-          <div className="meta-row">
-            <span>{slide.chapter}</span>
-            <span>{slide.time}</span>
-          </div>
-          <h1>{slide.title}</h1>
           <p>{slide.copy}</p>
-          <div className="thread-list" aria-label="Little threads">
-            {slide.chips.map((chip) => (
-              <span key={chip}>{chip}</span>
-            ))}
-          </div>
-          <div className="note">{slide.note}</div>
-          <details className="source-links">
-            <summary>Receipts</summary>
-            {slide.sources.map((source) => (
-              <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
-                {source.label}
-              </a>
-            ))}
-          </details>
         </article>
 
       </section>
