@@ -262,6 +262,13 @@ button {
   stroke-width: 2;
 }
 
+.shelf,
+.package {
+  fill: rgba(255, 255, 255, 0.76);
+  stroke: rgba(29, 29, 31, 0.14);
+  stroke-width: 2;
+}
+
 .receipt {
   fill: rgba(255, 255, 255, 0.76);
   stroke: rgba(29, 29, 31, 0.14);
@@ -339,6 +346,36 @@ p {
   line-height: 1.4;
   margin-top: 22px;
   padding-left: 12px;
+}
+
+.source-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid rgba(29, 29, 31, 0.07);
+  margin-top: 18px;
+  padding-top: 14px;
+}
+
+.source-links span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.source-links a {
+  color: rgba(29, 29, 31, 0.72);
+  font-size: 11px;
+  font-weight: 720;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.source-links a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .breaks-panel {
@@ -509,6 +546,16 @@ p {
   .note {
     font-size: 11px;
     margin-top: 16px;
+  }
+
+  .source-links {
+    gap: 4px;
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+
+  .source-links a {
+    font-size: 10px;
   }
 
   .controls {
