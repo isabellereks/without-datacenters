@@ -472,6 +472,11 @@ function App() {
           </div>
           <h1>{slide.title}</h1>
           <p>{slide.copy}</p>
+          <div className="thread-list" aria-label="Little threads">
+            {slide.chips.map((chip) => (
+              <span key={chip}>{chip}</span>
+            ))}
+          </div>
           <div className="note">{slide.note}</div>
           <details className="source-links">
             <summary>Receipts</summary>
@@ -483,26 +488,22 @@ function App() {
           </details>
         </article>
 
-        <aside className="breaks-panel" aria-label="What changes">
-          <span>Little threads</span>
-          <div>
-            {slide.chips.map((chip) => (
-              <button key={chip} type="button">
-                {chip}
-              </button>
-            ))}
-          </div>
-        </aside>
       </section>
 
-      <footer className="controls">
+      <footer
+        className="controls"
+        style={{ "--progress": (index + 1) / slides.length }}
+      >
         <button type="button" onClick={() => go(index - 1)} disabled={isFirst}>
           Previous page
         </button>
         <div className="turn-count" aria-label={`Page ${index + 1} of ${slides.length}`}>
           Page {index + 1} of {slides.length}
         </div>
-        <div className="dots">
+        <div className="progress-track" aria-hidden="true">
+          <span />
+        </div>
+        <div className="dots" aria-hidden="true">
           {slides.map((item, dotIndex) => (
             <button
               key={item.time}
