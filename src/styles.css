@@ -318,15 +318,20 @@ button {
 .caption-card {
   position: absolute;
   z-index: 3;
-  left: clamp(2rem, 7vw, 5rem);
-  top: calc(50% + 1rem);
-  bottom: auto;
-  width: min(39rem, calc(100% - 4rem));
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-  padding: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  top: auto;
+  bottom: clamp(2rem, 7vh, 4.25rem);
+  width: min(42rem, calc(100% - 5rem));
+  border: 1px solid color-mix(in oklch, var(--ink) 24%, transparent);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.54)),
+    color-mix(in oklch, var(--page) 94%, white);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 2px 0 color-mix(in oklch, var(--ink) 15%, transparent);
+  padding: 1.25rem 1.5rem;
+  transform: translateX(-50%);
   animation: caption-settle 560ms 120ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -373,11 +378,11 @@ h1 {
 }
 
 p {
-  max-width: 38rem;
+  max-width: 100%;
   color: color-mix(in oklch, var(--ink) 86%, transparent);
-  font-size: 1.35rem;
-  font-weight: 520;
-  line-height: 1.62;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  line-height: 1.58;
   margin-top: 0;
   text-wrap: pretty;
 }
@@ -552,12 +557,10 @@ p {
   }
 
   .caption-card {
-    left: 0.875rem;
-    right: 0.875rem;
-    bottom: 0.875rem;
-    width: auto;
-    border-radius: 14px;
-    padding: 1.5rem;
+    bottom: 1.5rem;
+    width: calc(100% - 2.5rem);
+    border-radius: 8px;
+    padding: 1.125rem 1.25rem;
   }
 
   h1 {
@@ -567,7 +570,7 @@ p {
   }
 
   p {
-    font-size: 1.15rem;
+    font-size: 1.0625rem;
   }
 }
 
@@ -586,7 +589,9 @@ p {
   }
 
   .caption-card {
-    padding: 1.125rem;
+    bottom: 1.25rem;
+    width: calc(100% - 2rem);
+    padding: 1rem;
   }
 
   h1 {
@@ -597,8 +602,8 @@ p {
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1.55;
+    font-size: 0.9875rem;
+    line-height: 1.52;
   }
 
   .note {
@@ -662,11 +667,11 @@ p {
 @keyframes caption-settle {
   from {
     opacity: 0.84;
-    transform: translateY(0.5rem) rotate(-0.18deg);
+    transform: translateX(-50%) translateY(0.5rem);
   }
   to {
     opacity: 1;
-    transform: translateY(0) rotate(-0.18deg);
+    transform: translateX(-50%) translateY(0);
   }
 }
 
